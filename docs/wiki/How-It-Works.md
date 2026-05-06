@@ -86,7 +86,9 @@ Every chunk gets a final confidence score combining:
 - RRF rank position
 - Path penalty: test files, docs, and plan files are deprioritised
 
-Only chunks above the configured `confidence_threshold` (default 0.5) are returned.
+Only chunks above the configured `confidence_threshold` (default 0.2) are returned.
+
+For a full breakdown of the scoring formula, weights, and how to tune the threshold, see [Confidence Scoring](Confidence-Scoring.md).
 
 ---
 
